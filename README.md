@@ -1,8 +1,9 @@
-[![Python](https://img.shields.io/badge/python-3.5%2C%203.6%2C%203.7--dev-blue.svg)]()
-[![Requirements](https://requires.io/github/denislour/pallets/requirements.svg?branch=master)](https://requires.io/github/denislour/pallets/requirements/?branch=master)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+[![Requirements Status](https://requires.io/github/denislour/pallets/requirements.svg?branch=master)](https://requires.io/github/denislour/pallets/requirements/?branch=master)
 [![Travis](https://travis-ci.org/denislour/pallets.svg?branch=master)](https://travis-ci.org/denislour/pallets)
 [![Coverage](https://codecov.io/gh/denislour/pallets/branch/master/graph/badge.svg)](https://codecov.io/gh/denislour/pallets)
-[![Code Climate](https://codeclimate.com/github/denislour/pallets/badges/gpa.svg)](https://codeclimate.com/github/denislour/pallets)
+<!-- [![Code Climate](https://codeclimate.com/github/denislour/pallets/badges/gpa.svg)](https://codeclimate.com/github/denislour/pallets) -->
 [![Docker](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?maxAge=2592000)]()
 
 # Pallets
