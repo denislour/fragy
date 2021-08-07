@@ -1,16 +1,13 @@
+sudo: required
 language: python
 python:
   - 3.7
-before_install:
-  - python --version
-  - pip install -U pip
-  - pip install -U pytest
-  - pip install codecov
+services: docker
 install:
-  - pip install --editable .
+  - docker-compose up -d --build
 script:
-  - pallets cov
-  - pallets flake8
-  - pallets test
+  - docker-compose exec website pallets cov
+  - docker-compose exec website pallets flake8
+  - docker-compose exec website pallets test
 after_success:
   - codecov
