@@ -2,7 +2,7 @@
   "emmet.includeLanguages": { "jinja-html": "html" },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "cSpell.words": ["pallets", "from", "leaderboard", "pyfile"],
+  "cSpell.words": ["from", "leaderboard", "pallets", "pyfile", "pytest"],
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
