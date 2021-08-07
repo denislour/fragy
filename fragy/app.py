@@ -1,4 +1,5 @@
 from flask import Flask
+from fragy.blueprints.page import page
 
 
 def create_app():
@@ -11,6 +12,9 @@ def create_app():
     # Config
     app.config.from_object("config.settings")
     app.config.from_pyfile("settings.py", silent=True)
+
+    # Blueprints
+    app.register_blueprint(page)
 
     @app.route("/")
     def index():
