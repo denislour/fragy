@@ -1,5 +1,5 @@
 from flask import Flask
-from fragy.blueprints.page import page
+from pallets.blueprints.page import page
 
 
 def create_app():

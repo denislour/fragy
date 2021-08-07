@@ -2,7 +2,7 @@
 FROM python:3.7.5-slim-buster
 
 # set work directory
-WORKDIR /fragy
+WORKDIR /pallets
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
