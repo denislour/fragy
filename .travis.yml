@@ -6,6 +6,11 @@ before_install:
   - pip install -U pip
   - pip install -U pytest
   - pip install codecov
-script: pytest pallets/tests --cov pallets
+install:
+  - pip install --editable .
+script:
+  - pallets cov
+  - pallets flake8
+  - pallets test
 after_success:
   - codecov
