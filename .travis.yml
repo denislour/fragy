@@ -12,6 +12,7 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
 install:
   - docker-compose up -d --build
+  - docker-compose exec website pip install --editable .
 script:
   - docker-compose exec website pallets cov
   - docker-compose exec website pallets flake8
