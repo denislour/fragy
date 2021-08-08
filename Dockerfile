@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 
 # copy project
 COPY . .
-RUN pip install --editable .
+ENTRYPOINT ["/pallets/entrypoint.sh"]
