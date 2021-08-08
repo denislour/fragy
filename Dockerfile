@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 
 # copy project
 COPY . .
-ENTRYPOINT ["/pallets/entrypoint.sh"]
+ENTRYPOINT ["sh", "/pallets/entrypoint.sh"]
