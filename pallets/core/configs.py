@@ -1,4 +1,7 @@
-def configs(app, settings_override):
+from flask import Flask
+
+
+def configs(app: Flask, settings_override):
     """
         Config app (mutates the app passing in).
 

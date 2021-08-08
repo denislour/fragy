@@ -13,5 +13,8 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
-  "files.associations": { "*.j2": "html" }
+  "files.associations": {
+    "*.j2": "html"
+  },
+  "python.linting.flake8Enabled": true
 }

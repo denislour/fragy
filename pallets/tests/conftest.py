@@ -1,4 +1,5 @@
 import pytest
+from flask import Flask
 from pallets.app import create_app
 
 
@@ -12,7 +13,7 @@ def app():
     params = {
         "DEBUG": False,
         "TESTING": True,
-        "SERVER_NAME": "8000",
+        "SERVER_NAME": "pallets.example",
     }
 
     _app = create_app(settings_override=params)
@@ -25,7 +26,7 @@ def app():
 
 
 @pytest.fixture(scope='function')
-def client(app):
+def client(app: Flask):
     """
     Setup an app client, this gets executed for each test function.
 
