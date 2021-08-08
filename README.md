@@ -1,5 +1,10 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+
 [![Requirements Status](https://requires.io/github/denislour/pallets/requirements.svg?branch=master)](https://requires.io/github/denislour/pallets/requirements/?branch=master)
 [![Travis](https://app.travis-ci.com/denislour/pallets.svg?branch=master)](https://app.travis-ci.com/denislour/pallets.svg?branch=master)
 ![example workflow](https://github.com/denislour/pallets/actions/workflows/coverage.yml/badge.svg)
