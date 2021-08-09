@@ -1,5 +1,6 @@
 from flask import Flask
 from pallets.blueprints.page import page
+from pallets.blueprints.contact import contact
 
 
 def blueprints(app: Flask):
@@ -10,3 +11,4 @@ def blueprints(app: Flask):
         :return: None
     """
     app.register_blueprint(page)
+    app.register_blueprint(contact)
