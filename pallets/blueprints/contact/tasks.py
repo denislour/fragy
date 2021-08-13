@@ -1,29 +1,25 @@
 from pallets.core.mail import send_template_message
-from pallets.app import create_celery_app
+from pallets.core.extensions import executor
 
 
-celery = create_celery_app()
-
-
-@celery.task()
-def deliver_contact_email(email, message):
+@executor.job
+def deliver_contact_email(mail_from, mail_to, message):
     """
         Send a contact e-mail.
 
-        :param email: E-mail address of the visitor
-        :type user_id: str
+        :param mail_from: E-mail address of the visitor
         :param message: E-mail message
-        :type user_id: str
+        :param mail_to: E-mail message of the receiver
         :return: None
     """
-    ctx = {'email': email, 'message': message}
+    ctx = {'email': mail_from, 'message': message}
 
     send_template_message(
         subject='[Pallets] Contact',
-        sender=email,
-        recipients=[celery.conf.get('MAIL_USERNAME')],
-        reply_to=email,
-        template='contact/mail/index', ctx=ctx
+        sender=mail_from,
+        recipients=[mail_to],
+        reply_to=mail_from,
+        template='mail/index', ctx=ctx
     )
 
     return None

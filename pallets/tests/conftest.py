@@ -14,6 +14,7 @@ def app():
         "DEBUG": False,
         "TESTING": True,
         "SERVER_NAME": "pallets.example",
+        'WTF_CSRF_ENABLED': False,
     }
 
     _app = create_app(settings_override=params)
